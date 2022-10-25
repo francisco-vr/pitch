@@ -1,0 +1,105 @@
+---
+title: ""
+author: 
+  - "Francisco Villarroel Riquelme"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      countdown: 180000
+    seal: false
+    
+---
+background-image: url(short_pitch_files/logo2017a.png)
+background-size: 160px
+background-position: 97% 97%
+class: center, middle, bg_karl
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(knitr)
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#b01333",
+  secondary_color = "#085e9f",
+  inverse_header_color = "#FFFFFF"
+)
+```
+```{css, echo=F}
+h1, h2, h3 {
+  text-align: center;
+}
+```
+
+
+
+```{css, echo = F}
+.reduced_opacity {
+  opacity: 0.1;
+}
+.bg_karl {
+  position: relative;
+  z-index: 1;
+}
+.bg_karl::before {    
+      content: "";
+      background-image: url('https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/05191207/Political-Leaders.png');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.20;
+      z-index: -1;
+}
+```
+
+
+
+<center><h3>Egalitarian and Authoritarian Political Leadership effects</h3></center>
+<center><strong>Francisco Villarroel-Riquelme (CICS, UDD)</strong></center></div>
+
+--
+
+#### if you had to choose a political leader, which one you follow?
+
+
+--
+
+ #### ..its Authoritarian or Egalitarian?
+ 
+--
+
+###How? 
+
+_Lab-in-the-field_ experiment on coordination game with a leader
+
+Difficult to achieve goals (difficult and normal) and egalitarian and Authoritarian (2x2 factors)
+
+--
+
+###Expected Results
+
+####In difficult environments, people tend to prefer and trust more in authoritarian leaders
+
